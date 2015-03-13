@@ -74,7 +74,7 @@ Vault currently supports the following: Permissions 3, PEX, GroupManager, bPerms
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>${bukkitVersion}</version>
+			<version>1.7.9-R0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>net.milkbowl.vault</groupId>
@@ -108,6 +108,14 @@ Vault currently supports the following: Permissions 3, PEX, GroupManager, bPerms
 			<artifactId>Privileges</artifactId>
 			<version>1.7.4</version>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.tyrannyofheaven.bukkit</groupId>
+			<artifactId>zPermissions</artifactId>
+			<version>0.9.19-SNAPSHOT</version>
+			<optional>true</optional>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/zPermissions.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>is.currency</groupId>

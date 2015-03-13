@@ -15,10 +15,7 @@
  */
 package net.milkbowl.vault.permission.plugins;
 
-import java.util.List;
-
 import net.milkbowl.vault.permission.Permission;
-
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
@@ -28,17 +25,18 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.server.PluginDisableEvent;
 import org.bukkit.event.server.PluginEnableEvent;
 import org.bukkit.plugin.Plugin;
-
 import ru.tehkode.permissions.PermissionGroup;
 import ru.tehkode.permissions.PermissionUser;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
 
-public class Permission_PermissionsEx extends Permission {
+import java.util.List;
+
+public class Permission_PermissionsExC extends Permission {
 
     private final String name = "PermissionsEx";
     private PermissionsEx permission = null;
 
-    public Permission_PermissionsEx(Plugin plugin) {
+    public Permission_PermissionsExC(Plugin plugin) {
         this.plugin = plugin;
         Bukkit.getServer().getPluginManager().registerEvents(new PermissionServerListener(this), plugin);
 
@@ -71,9 +69,9 @@ public class Permission_PermissionsEx extends Permission {
     }
 
     public class PermissionServerListener implements Listener {
-        Permission_PermissionsEx permission = null;
+        Permission_PermissionsExC permission = null;
 
-        public PermissionServerListener(Permission_PermissionsEx permission) {
+        public PermissionServerListener(Permission_PermissionsExC permission) {
             this.permission = permission;
         }
 
